@@ -9,9 +9,9 @@ export class PlansList extends PureComponent {
       this.props.plans.map((plan, index) => {
         return (
           <div key = {index}>
-            <div>{plan[0].provider.id}</div>
-            <div>{plan[1].provider.id}</div>
-            <div>{plan[2].provider.id}</div>
+            <div>{plan.data_credits}</div>
+            <div>{plan.data_credits}</div>
+            <div>{plan.data_credits}</div>
           </div>
         )
       })

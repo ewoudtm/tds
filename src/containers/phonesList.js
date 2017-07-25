@@ -25,7 +25,7 @@ export class PhonesList extends PureComponent {
             onClick={
               () => {
                 this.props.selectPhone(phone)
-                this.props.fetchPlans(phone)
+                this.props.fetchPlans(phone.id)
               }
             }
           >

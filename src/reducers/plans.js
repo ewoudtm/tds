@@ -1,10 +1,10 @@
 import { FETCH_PLANS } from '../actions/fetchPlans'
-import plans from '../seeds/plans'
+//import plans from '../seeds/plans'
 
-export default (state = plans, { type, payload } = {}) => {
+export default (state = [], { type, payload } = {}) => {
   switch(type) {
     case FETCH_PLANS :
-      return state
+      return [].concat(payload)
 
     default :
       return state
