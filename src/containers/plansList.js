@@ -1,24 +1,18 @@
-import React, { PureComponent } from 'react'
+import React, { PureComponent, PropTypes } from 'react'
 import { connect } from 'react-redux'
-//import phones from '../seeds/phones'
 import fetchPlans from '../actions/fetchPlans'
 
 export class PlansList extends PureComponent {
-  static propTypes = {
-    plans: PropTypes.array.isRequired,
+
+  renderPlansList(plans) {
+    this.props.plans.map((plan, index) => {
+      return (
+        <li key = {index}>
+          <div>provider: {plan.provider.id}</div>
+        </li>
+      )
+    })
   }
-
-  if(plans.length === 0) return (
-    <div>Select a Phone</div>
-  )
-
-  const renderPlansList = ({ plans }) => (
-    plans.map(plan) => (
-      <li key = {index}>
-        <div>provider: {plan.provider.id}</div>
-      </li>
-    )
-  )
 
   render() {
     return (

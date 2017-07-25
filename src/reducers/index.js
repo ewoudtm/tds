@@ -1,10 +1,12 @@
-import { combineReducer } from 'redux'
+import { combineReducers } from 'redux'
 import phones from './phones'
 import plans from './plans'
+import selectedPhone from './selectedPhone'
 
-export const rootReducer = combineReducer({
+const rootReducer = combineReducers({
   phones,
-  plans
+  plans,
+  selectedPhone,
 })
 
 export default rootReducer
