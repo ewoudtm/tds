@@ -1,24 +1,85 @@
 .App {
+  text-align: left;
+  background-color: #FFF;
+  max-width: 1400px;
+  margin: auto;
+  padding: 10px;
+}
+
+.Title {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
+  background-color: #FFF;
+  height: 50px;
   padding: 20px;
-  color: white;
+  color: orange;
 }
 
-.App-intro {
-  font-size: large;
+.Container {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.Phonelist {
+  color: #54d6f7;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.PhonelistItem {
+  padding: 5px;
+}
+
+.Selection {
+  padding: 10px;
+  background-color: #444;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  min-width: 400px;
+}
+
+.Phonedetail {
+  padding: 10px;
+  padding-top: 0px;
+  text-align: center;
+
+}
+.Phonedetail p {
+  margin: 10px;
+  margin-top: 0px;
+}
+
+.Phonedetail img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.Planlist {
+  background-color: #546;
+}
+
+.NoSelection {
+  text-transform: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #444;
+  min-width: 400px;
+}
+.NoSelection p {
+  color: #fff;
+  margin: 10px;
+}
+
+table {
+  border-spacing: 5px;
 }

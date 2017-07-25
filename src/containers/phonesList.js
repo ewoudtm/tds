@@ -20,7 +20,7 @@ export class PhonesList extends PureComponent {
     return (
       this.props.phones.map((phone) => {
         return (
-          <div
+          <div className="PhonelistItem"
             key = {phone.id}
             onClick={
               () => {
@@ -40,8 +40,7 @@ export class PhonesList extends PureComponent {
   render() {
     return (
       <div>
-        <div><h1>Test PhonesList</h1></div>
-        <div>
+        <div className="Phonelist">
           { this.renderPhonesList() }
         </div>
       </div>
