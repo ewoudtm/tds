@@ -16,12 +16,11 @@ export class PhonesList extends PureComponent {
     this.props.selectPhone(phone)
   }
 
-  renderPhonesList(phones){
-    console.log(phones)
+  renderPhonesList(){
     return (
-      phones.map((phone) => {
+      this.props.phones.map((phone) => {
         return (
-          <li
+          <div
             key = {phone.id}
             onClick={
               () => {
@@ -31,7 +30,7 @@ export class PhonesList extends PureComponent {
             }
           >
             {phone.full_name}
-          </li>
+          </div>
         )
       })
     )
@@ -39,17 +38,11 @@ export class PhonesList extends PureComponent {
 
 
   render() {
-    const { phones } = this.props
     return (
       <div>
         <div><h1>Test PhonesList</h1></div>
-        <div><h2>{phones[0].full_name}</h2></div>
-        <ul>
-          { this.renderPhonesList(phones) }
-        </ul>
-        <div><a href="https://www.w3schools.com">Visit W3Schools.com!</a></div>
         <div>
-
+          { this.renderPhonesList() }
         </div>
       </div>
     )

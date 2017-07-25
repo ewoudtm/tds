@@ -1,32 +1,34 @@
-import React, { PureComponent, PropTypes } from 'react'
+import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
-import fetchPlans from '../actions/fetchPlans'
+
 
 export class PlansList extends PureComponent {
 
-  renderPlansList(plans) {
-    this.props.plans.map((plan, index) => {
-      return (
-        <li key = {index}>
-          <div>provider: {plan.provider.id}</div>
-        </li>
-      )
-    })
+  renderPlansList(){
+    return (
+      this.props.plans.map((plan, index) => {
+        return (
+          <div key = {index}>
+            <div>{plan[0].provider.id}</div>
+            <div>{plan[1].provider.id}</div>
+            <div>{plan[2].provider.id}</div>
+          </div>
+        )
+      })
+    )
   }
 
   render() {
     return (
       <div>
         <div><h1>Test PlansList</h1></div>
-        <ul>
-          { this.renderPlansList.bind(this) }
-        </ul>
+        <div>
+          { this.renderPlansList()}
+        </div>
       </div>
     )
   }
 }
-
-
 
 
 const mapStateToProps = ({ plans }) => ({ plans })
