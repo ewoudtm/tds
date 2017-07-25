@@ -17,6 +17,7 @@ export class PlansList extends PureComponent {
   render() {
     return (
       <div>
+        <div><h1>Test PlansList</h1></div>
         <ul>
           { this.renderPlansList.bind(this) }
         </ul>
