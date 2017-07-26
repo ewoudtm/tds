@@ -1,12 +1,9 @@
-import React, { PureComponent, PropTypes } from 'react'
+import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 import fetchPhones from '../actions/fetchPhones'
 import fetchPlans from '../actions/fetchPlans'
 import fetchProviders from '../actions/fetchProviders'
 import selectPhone from '../actions/selectPhone'
-import phonesListItem from '../components/phonesListItem'
-
-
 
 export class PhonesList extends PureComponent {
 

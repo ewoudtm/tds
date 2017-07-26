@@ -1,6 +1,5 @@
 import axios from 'axios'
 import { API_AUTH, API_URL } from '../API'
-
 export const FETCH_PLANS = 'FETCH_PLANS'
 
 const PLAN_URL = "/propositions"

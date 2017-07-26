@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 
-
 export class PlansList extends PureComponent {
 
   findProvider(providerId){
@@ -27,21 +26,19 @@ export class PlansList extends PureComponent {
             <td>{this.findProvider(plan.provider.id)}</td>
             <td>{this.dataCreditConverter(plan.data_credits)} {plan.voice_credits}min {plan.contract_term_in_months}M</td>
             <td className="SelectionPrice">€ {plan.connection_fee}</td>
-            <td className="SelectionPrice">€ {plan.shops[0].tco_per_month}</td>
+            <td className="SelectionPrice">€ {plan.shops[0].monthly_fee}</td>
           </tr>
         )
       })
     )
   }
 
-
-
   renderSelectedPhone(){
     const phone = this.props.selectedPhone
     return (
       <div className="Phonedetail">
         <p><strong>{phone.full_name}</strong></p>
-        <img src={phone.image} alt="image of phone"></img>
+        <img src={phone.image} alt="phone"></img>
       </div>
     )
   }
@@ -74,7 +71,5 @@ export class PlansList extends PureComponent {
   }
 }
 
-
 const mapStateToProps = ({ plans, selectedPhone, providers }) => ({ plans, selectedPhone, providers })
-
 export default connect(mapStateToProps)(PlansList)

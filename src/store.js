@@ -1,9 +1,6 @@
-import { combineReducers, createStore, compose, applyMiddleware } from "redux";
+import { createStore, compose, applyMiddleware } from "redux";
 import ReduxThunk from 'redux-thunk'
-import phones from './reducers/phones'
-import plans from './reducers/plans'
 import rootReducer from './reducers'
-
 
 const devTools = window.devToolsExtension ? window.devToolsExtension() : (f) => f
 
