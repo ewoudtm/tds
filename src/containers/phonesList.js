@@ -32,7 +32,7 @@ export class PhonesList extends PureComponent {
               }
             }
           >
-            {phone.full_name}
+            <text>{phone.full_name}</text>
           </div>
         )
       })
@@ -42,10 +42,8 @@ export class PhonesList extends PureComponent {
 
   render() {
     return (
-      <div>
-        <div className="Phonelist">
-          { this.renderPhonesList() }
-        </div>
+      <div className="Phonelist">
+        { this.renderPhonesList() }
       </div>
     )
   }

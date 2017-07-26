@@ -26,8 +26,8 @@ export class PlansList extends PureComponent {
           <tr key = {index}>
             <td>{this.findProvider(plan.provider.id)}</td>
             <td>{this.dataCreditConverter(plan.data_credits)} {plan.voice_credits}min {plan.contract_term_in_months}M</td>
-            <td>€ {plan.connection_fee}</td>
-            <td>€ {plan.shops[0].tco_per_month}</td>
+            <td className="SelectionPrice">€ {plan.connection_fee}</td>
+            <td className="SelectionPrice">€ {plan.shops[0].tco_per_month}</td>
           </tr>
         )
       })
@@ -57,9 +57,7 @@ export class PlansList extends PureComponent {
 
     return (
       <div className="Selection">
-        <div>
-          { this.renderSelectedPhone() }
-        </div>
+        { this.renderSelectedPhone() }
         <div>
           <table>
             <tr>
