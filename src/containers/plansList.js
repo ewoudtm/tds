@@ -5,17 +5,19 @@ import { connect } from 'react-redux'
 export class PlansList extends PureComponent {
 
   findProvider(providerId){
-    console.log(this.props.providers)
     const provider = this.props.providers.find((provider) => {
       return provider.id === providerId
     })
-    console.log(provider)
     return (
       provider.name
     )
-
   }
 
+  dataCreditConverter(dataCredits){
+    return (
+      dataCredits >= 1000 ? `${dataCredits/1000}GB` : `${dataCredits}MB`
+    )
+  }
 
   renderPlansList(){
     return (
@@ -23,7 +25,7 @@ export class PlansList extends PureComponent {
         return (
           <tr key = {index}>
             <td>{this.findProvider(plan.provider.id)}</td>
-            <td>{plan.data_credits}MB {plan.voice_credits}min {plan.contract_term_in_months}M</td>
+            <td>{this.dataCreditConverter(plan.data_credits)} {plan.voice_credits}min {plan.contract_term_in_months}M</td>
             <td>€ {plan.connection_fee}</td>
             <td>€ {plan.shops[0].tco_per_month}</td>
           </tr>
