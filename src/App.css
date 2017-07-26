@@ -33,6 +33,11 @@
   padding: 5px;
 }
 
+.Selected {
+  color: #fff;
+  background-color: #54d6f7;
+}
+
 .Selection {
   padding: 10px;
   background-color: #444;

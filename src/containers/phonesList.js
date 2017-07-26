@@ -20,7 +20,7 @@ export class PhonesList extends PureComponent {
     return (
       this.props.phones.map((phone) => {
         return (
-          <div className="PhonelistItem"
+          <div className={ phone.id === this.props.selectedPhone.id ? "PhonelistItem Selected" : "PhonelistItem"}
             key = {phone.id}
             onClick={
               () => {
@@ -49,7 +49,7 @@ export class PhonesList extends PureComponent {
 }
 
 
-const mapStateToProps = ({ phones }) => ({ phones })
+const mapStateToProps = ({ phones, selectedPhone }) => ({ phones, selectedPhone })
 
 export default connect(mapStateToProps, {
   fetchPhones,
