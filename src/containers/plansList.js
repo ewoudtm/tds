@@ -3,12 +3,26 @@ import { connect } from 'react-redux'
 
 
 export class PlansList extends PureComponent {
+
+  findProvider(providerId){
+    console.log(this.props.providers)
+    const provider = this.props.providers.find((provider) => {
+      return provider.id === providerId
+    })
+    console.log(provider)
+    return (
+      provider.name
+    )
+
+  }
+
+
   renderPlansList(){
     return (
       this.props.plans.map((plan, index) => {
         return (
           <tr key = {index}>
-            <td>{plan.provider.id}</td>
+            <td>{this.findProvider(plan.provider.id)}</td>
             <td>{plan.data_credits}MB {plan.voice_credits}min {plan.contract_term_in_months}M</td>
             <td>€ {plan.connection_fee}</td>
             <td>€ {plan.shops[0].tco_per_month}</td>
@@ -17,6 +31,8 @@ export class PlansList extends PureComponent {
       })
     )
   }
+
+
 
   renderSelectedPhone(){
     const phone = this.props.selectedPhone
@@ -59,6 +75,6 @@ export class PlansList extends PureComponent {
 }
 
 
-const mapStateToProps = ({ plans, selectedPhone }) => ({ plans, selectedPhone })
+const mapStateToProps = ({ plans, selectedPhone, providers }) => ({ plans, selectedPhone, providers })
 
 export default connect(mapStateToProps)(PlansList)
