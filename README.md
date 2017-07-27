@@ -1,3 +1,27 @@
+# App for 10 most popular phones & their plans
+
+## About
+An app for both Desktop and Mobile use, build with React and Redux connecting to an external API showing an overview of the 10 most popular for the dutch telecom market. When selecting a phone the best propositions are shown. 
+
+
+## Screenshots
+
+![](http://res.cloudinary.com/ewoudtm/image/upload/c_scale,w_800/v1501152152/DutchSelection/Screen_Shot_2017-07-26_at_15.21.53.png)
+Homescreen on Desktop
+
+![](http://res.cloudinary.com/ewoudtm/image/upload/c_scale,w_800/v1501152156/DutchSelection/Screen_Shot_2017-07-26_at_15.22.51.png)
+Desktop: Selected Phone and its best plans
+
+![](http://res.cloudinary.com/ewoudtm/image/upload/c_scale,w_800/v1501152566/DutchSelection/Screen_Shot_2017-07-27_at_12.48.52.png)
+Homescreen Mobile
+
+![](http://res.cloudinary.com/ewoudtm/image/upload/c_scale,w_800/v1501152161/DutchSelection/Screen_Shot_2017-07-26_at_15.23.45.png)
+
+Mobile: Selected Phone and its best plans
+
+
+
+## Create-React-App
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
