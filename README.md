@@ -12,10 +12,10 @@ Homescreen on Desktop
 ![](http://res.cloudinary.com/ewoudtm/image/upload/c_scale,w_800/v1501152156/DutchSelection/Screen_Shot_2017-07-26_at_15.22.51.png)
 Desktop: Selected Phone and its best plans
 
-![](http://res.cloudinary.com/ewoudtm/image/upload/c_scale,w_800/v1501152566/DutchSelection/Screen_Shot_2017-07-27_at_12.48.52.png)
+![](http://res.cloudinary.com/ewoudtm/image/upload/c_scale,w_500/v1501152566/DutchSelection/Screen_Shot_2017-07-27_at_12.48.52.png)
 Homescreen Mobile
 
-![](http://res.cloudinary.com/ewoudtm/image/upload/c_scale,w_800/v1501152161/DutchSelection/Screen_Shot_2017-07-26_at_15.23.45.png)
+![](http://res.cloudinary.com/ewoudtm/image/upload/c_scale,w_500/v1501152161/DutchSelection/Screen_Shot_2017-07-26_at_15.23.45.png)
 
 Mobile: Selected Phone and its best plans
 
