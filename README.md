@@ -6,16 +6,19 @@ An app for both Desktop and Mobile use, build with React and Redux connecting to
 
 ## Screenshots
 
-Homescreen on Desktop
+### Desktop
+- Homescreen
+- Selected Phone and its best plans
+### Mobile
+- Homescreen
+- Selected Phone and its best plans
+
 ![](http://res.cloudinary.com/ewoudtm/image/upload/c_scale,w_800/v1501152152/DutchSelection/Screen_Shot_2017-07-26_at_15.21.53.png)
 
-Desktop: Selected Phone and its best plans
 ![](http://res.cloudinary.com/ewoudtm/image/upload/c_scale,w_800/v1501152156/DutchSelection/Screen_Shot_2017-07-26_at_15.22.51.png)
 
-Homescreen Mobile
 ![](http://res.cloudinary.com/ewoudtm/image/upload/c_scale,w_500/v1501152566/DutchSelection/Screen_Shot_2017-07-27_at_12.48.52.png)
 
-Mobile: Selected Phone and its best plans
 ![](http://res.cloudinary.com/ewoudtm/image/upload/c_scale,w_500/v1501152161/DutchSelection/Screen_Shot_2017-07-26_at_15.23.45.png)
 
 
